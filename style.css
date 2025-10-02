@@ -10,3 +10,20 @@
   --white-color: #ffffff;
   --black-color: #000000;
 }
+nav{
+  /* Testing */
+  right:0;
+  position:absolute;
+  margin-top: 10px;
+  border:2px solid black;
+  /* Test stop */
+  text-align: right;
+  font-size: 1.3rem;
+}
+nav a{
+  padding: 10px;
+  line-height: 3rem;
+  text-decoration: none;
+  text-shadow: 0 0 10px black;
+  color:var(--white-color);
+}
