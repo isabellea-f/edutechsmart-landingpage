@@ -10,3 +10,74 @@
   --white-color: #ffffff;
   --black-color: #000000;
 }
+
+/* Contanct us / split wrapper */
+#contact-us {
+  background-color: var(--primary-color);
+  background: linear-gradient(
+    90deg,
+    rgba(42, 98, 143, 1) 0%,
+    rgba(19, 41, 61, 1) 50%,
+    rgba(62, 146, 204, 1) 100%
+  );
+  color: var(--white-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contact-us a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* Default = mobile */
+.split-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.split-content {
+  flex: 1;
+}
+
+.split-content p {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.split-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.split-image {
+  flex: 1;
+}
+
+.split-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.arrow-link i {
+  margin-left: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.arrow-link:hover i {
+  transform: translateX(4px);
+}
+
+/* Larger screens */
+@media (min-width: 700px) {
+  .split-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
