@@ -1,5 +1,6 @@
-# EduTechSmart Landingpage
-[Sammanfattning av projektet]
+# EduTechSmart Landing page
+Det här är vårt teams vision kring en ny Landing page. Vi vill göra en mobilanpassad omarbetning av den nuvarande och modernisera designen.
+
 ##Status
 | Hittills bestigna berg | 
 | ---------------------- |
