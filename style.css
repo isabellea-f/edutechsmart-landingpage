@@ -11,12 +11,8 @@
   --black-color: #000000;
 }
 nav{
-  /* Testing */
-  right:0;
   position:absolute;
-  margin-top: 10px;
-  border:2px solid black;
-  /* Test stop */
+  right:0;
   text-align: right;
   font-size: 1.3rem;
 }
