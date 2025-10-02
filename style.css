@@ -2,3 +2,32 @@
   margin: 0;
   padding: 0;
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.split {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  border: 2px solid black;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
