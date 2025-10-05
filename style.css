@@ -30,6 +30,7 @@
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: var(--black-color);
   }
 
   .slider-container > div {
@@ -55,10 +56,6 @@
     text-align: center;
   }
 
-  .slider-container .quote {
-    color: var(--black-color);
-  }
-
   .slider-container img {
     width: 200px;
     height: 200px;
@@ -70,13 +67,10 @@
   .next-btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.6);
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
   }
 
   .prev-btn:hover,
