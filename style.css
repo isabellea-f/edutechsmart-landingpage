@@ -26,11 +26,11 @@
   .slider-container {
     position: relative;
     width: 600px;
-    height: 350px;
+    height: 500px;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     color: var(--black-color);
+    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .slider-container > div {
@@ -61,6 +61,18 @@
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
+  }
+
+  .slider-container h3 {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 300;
+  }
+
+  .slider-container .name {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.4rem;
   }
 
   .prev-btn,
