@@ -154,6 +154,8 @@ header h1 {
 #contact-section .split-content p {
   margin-bottom: 1.2rem;
   font-size: 1.4rem;
+  color: var(--accent-color);
+  font-weight: 700;
 }
 
 #contact-section .split-title {
