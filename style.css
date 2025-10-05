@@ -21,50 +21,75 @@ h1 {
 }
 
 /* Hero / Header */
+
+header {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  color: var(--white-color);
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/woman-smartphone.jpg") center / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  z-index: 0;
+}
+
+header .header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+header .button {
+  margin-top: 2rem;
+  position: relative;
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  z-index: 3;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+header h1 {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
 @media only screen and (min-width: 601px) {
   header {
-    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
     height: 80vh;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     margin-top: -7rem;
-    overflow: hidden;
+    text-align: left;
+    color: var(--black-color);
   }
 
   header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("/assets/images/woman-smartphone.jpg");
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 30% 100%);
     background-position: 20% center;
-    z-index: 0;
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
   }
 
   header .header-content {
-    position: relative;
-    z-index: 1;
-    color: var(--black-color);
     padding: 6rem 2rem;
     margin-left: 5rem;
-    max-width: 35rem;
-  }
-
-  header .button {
-    margin-top: 2rem;
-    position: relative;
-    padding: 0.6rem 2rem;
-    border: none;
-    border-radius: 40px;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
-    z-index: 3;
-    font-size: 1rem;
-    font-weight: 400;
+    max-width: 40rem;
   }
 
   header .button:hover {
@@ -85,51 +110,82 @@ h1 {
 }
 
 /* Contanct us / split wrapper */
-#contact-us {
+
+#contact-section {
   color: var(--white-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 6rem 4rem;
+  padding: 6rem 1rem;
 }
 
-#contact-us a {
-  text-decoration: none;
-  color: var(--white-color);
+@media (min-width: 768px) {
+  #contact-section {
+    color: var(--white-color);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 6rem 4rem;
+  }
+
+  #contact-section a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
 }
 
-/* Default = mobile */
-.split-wrapper {
+/* Split wrapper */
+#contact-section .split-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 80rem;
+  max-width: 100%;
   margin: 0 auto;
   background-color: var(--primary-color);
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.split-content {
-  flex: 1;
+#contact-section .split-wrapper a {
+  text-decoration: none;
+  color: var(--white-color);
 }
 
-.split-content p {
+#contact-section .split-content {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+#contact-section .split-content p {
   margin-bottom: 1.2rem;
   font-size: 1.4rem;
 }
 
-.split-title {
+#contact-section .split-title {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.split-image {
+#contact-section .split-image {
   flex: 1;
 }
 
-.split-image img {
+#contact-section .split-image img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .split-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #contact-section .split-wrapper {
+    flex-direction: row;
+    max-width: 80rem;
+  }
+
+  #contact-section .split-image img {
+    height: 100%;
+  }
 }
 
 .arrow-link i {
@@ -139,13 +195,5 @@ h1 {
 
 .arrow-link:hover i {
   transform: translateX(4px);
-}
-
-/* Larger screens */
-@media (min-width: 700px) {
-  .split-wrapper {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+  color: var(--accent-color);
 }
