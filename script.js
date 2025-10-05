@@ -21,7 +21,7 @@ function prevSlide() {
   slides[currentSlide].classList.add("active");
 }
 
-setInterval(changeSlide, 8000);
+setInterval(changeSlide, 3000);
 
 // Buttons
 let prevButton = document.querySelector(".prev-btn");
