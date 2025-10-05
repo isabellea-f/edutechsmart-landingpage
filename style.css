@@ -21,7 +21,6 @@ h1 {
 }
 
 /* Hero / Header */
-
 header {
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
@@ -107,6 +106,23 @@ header h1 {
     margin-bottom: 2rem;
     font-size: 1.5rem;
   }
+}
+
+/* Nav */
+nav {
+  position: absolute;
+  text-align: right;
+  font-size: 1.3rem;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+nav a {
+  padding: 10px;
+  line-height: 3rem;
+  text-decoration: none;
+  text-shadow: 0 0 10px black;
+  color: var(--white-color);
 }
 
 /* Contanct us / split wrapper */
