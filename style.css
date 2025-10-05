@@ -44,6 +44,8 @@
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 1.4rem;
+  color: var(--accent-color);
+  font-weight: 700;
 }
 
 .slider-container .quote i {
