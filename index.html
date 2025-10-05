@@ -5,67 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <nav></nav>
-    <header></header>
     <main>
-      <div class="card-container-flex">
-        <!-- Card 1 -->
-        <div class="card1">
-          <h2 class="bold heading">NO CLASSROOM NEEDED</h2>
-          <p>
-            EducateSmartTM is our dedicated platform, offering healthcare
-            companies essential educational tools to drive and maintain
-            unparalleled quality standards.
-          </p>
-          <p>
-            EduTechSmart plays a crucial role in reshaping the educational
-            landscape with our innovative approach.
-          </p>
-          <p>
-            Our educational methodology is designed for easy and convenient
-            access, seamlessly incorporating a diverse range of features
-            including gamified scenario-based training, video content, 3D
-            animation, and modern assessment techniques, all enhanced by AI.
-          </p>
-        </div>
+      <section id="slider-section">
+        <div class="slider-container">
+          <div class="active">
+            <img
+              class="active"
+              src="/assets/portraits/anders-eriksson.jpg"
+              alt=""
+            />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              This interactive educational method to teach CPR is really good,
+              relevant and necessary!
+            </h3>
+            <p class="name">Anders Eriksson</p>
+            <p class="profession">Cardiology Specialist, Senior Consultant</p>
+          </div>
 
-        <!-- Card 2 -->
-        <div class="card2">
-          <h2 class="bold heading">
-            DEVELOPED BY EXPERTS, VERIFIED BY EXPERTS
-          </h2>
-          <p>
-            SEduTechSmart draws from decades of expertise spanning healthcare,
-            IT, gaming, and education, all enriched by cutting-edge AI
-            advancements. Our courses are crafted by seasoned professionals
-            well-versed in industry standards, regulations, and guidelines. We
-            prioritize alignment with local norms and best practices.
-          </p>
-        </div>
+          <div>
+            <img src="/assets/portraits/egil-strunke.jpeg" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              From a business point of view, this game-engine based education
+              combined with AI technology in a SaaS platform is brilliant.
+            </h3>
+            <p class="name">Egil Strunke</p>
+            <p class="profession">Strategic Advisor</p>
+          </div>
 
-        <!-- Card 3 -->
-        <div class="card3">
-          <h2 class="bold heading">BENEFITS</h2>
-          <ul class="benefitsList">
-            <li>Cost-efficient</li>
-            <li>User-friendly planning</li>
-            <li>Repeatable modules</li>
-            <li>24/7 accessibility</li>
-            <li>Scenario based</li>
-            <li>Localized in more than 20 languages</li>
-            <li>Customizable characters and environments</li>
-            <li>Seamless access on PC/MAC, mobile, or tablet</li>
-            <li>Content not found in typical online courses</li>
-            <li>Eco-friendly approach</li>
-          </ul>
-          <p>
-            Education with us is affordable, effective, and accessible
-            everywhere and on every device!
-          </p>
+          <div>
+            <img src="/assets/portraits/sofia-nilsson.jpg" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              This is really spot on when it comes to timing for the healthcare
+              sector. A format we have been dreaming of.
+            </h3>
+            <p class="name">Sofia Nilsson</p>
+            <p class="profession">Expert Healthcare</p>
+          </div>
+
+          <div>
+            <img src="/assets/portraits/ulrika-jonsson.jpg" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              We can train our staff in a way that is both effective and
+              motivating.
+            </h3>
+            <p class="name">Ulrika Jönsson, STIL Assistans</p>
+            <p class="profession">Supervisor Partner and Resource Manage</p>
+          </div>
+
+          <div>
+            <img src="/assets/images/din-o-min-omsorg.jpg" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              The courses are really good, saves time and studies can be made
+              anywhere.
+            </h3>
+            <p class="name">Din & Min Omsorg</p>
+          </div>
+
+          <div>
+            <img src="/assets/logos/logo_ufh.png" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              It's essential that our employees has knowledge about CPR. This
+              can save the lives of guests and collegues.
+            </h3>
+            <p class="name">Umeå Folkets Hus</p>
+          </div>
+          <button class="prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-      </div>
+      </section>
     </main>
     <footer></footer>
     <script src="script.js"></script>
