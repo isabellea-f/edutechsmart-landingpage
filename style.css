@@ -142,7 +142,6 @@ nav a {
 
   #contact-section a {
     text-decoration: none;
-    color: var(--white-color);
   }
 }
 
@@ -153,13 +152,17 @@ nav a {
   gap: 2rem;
   max-width: 100%;
   margin: 0 auto;
-  background-color: var(--primary-color);
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--primary-color);
 }
 
 #contact-section .split-wrapper a {
   text-decoration: none;
-  color: var(--white-color);
+  font-size: 1.2rem;
+}
+
+#contact-section .split-wrapper a:visited {
+  color: inherit;
 }
 
 #contact-section .split-content {
@@ -170,13 +173,13 @@ nav a {
 #contact-section .split-content p {
   margin-bottom: 1.2rem;
   font-size: 1.4rem;
-  color: var(--accent-color);
   font-weight: 700;
 }
 
 #contact-section .split-title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--secondary-color);
 }
 
 #contact-section .split-image {
@@ -273,7 +276,7 @@ nav a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: white;
+  background-color: var(--white-color);
   z-index: 0;
   gap: 1rem;
 }
