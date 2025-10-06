@@ -618,6 +618,10 @@ label i {
 }
 
 /* Footer */
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+}
 
 footer {
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
