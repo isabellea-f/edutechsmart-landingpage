@@ -14,16 +14,20 @@ footer {
   justify-content: space-between;
   background: var(--primary-color);
   padding: 20px;
+  border-top: var(--accent-color);
 }
 .social {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 #links {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   list-style: none;
+  font-size: 30px;
+}
+#links a {
+  color: black;
 }
 #links a:hover {
   color: var(--secionday-color);
