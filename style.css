@@ -10,3 +10,55 @@
   --white-color: #ffffff;
   --black-color: #000000;
 }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+.video-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 50px;
+}
+
+.youtube-heading {
+  font-size: 1rem;     
+  margin: 20px 0 20px 5px;    
+  color:var(--primary-color);           
+}
+.youtube-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--accent-color);
+}
+
+.youtube-wrapper .youtube-thumb {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.youtube-wrapper:hover .youtube-thumb {
+  transform: scale(1.4);
+}
+
+.youtube-wrapper .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background: url(assets/logos/red-play-button.svg) no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+}
