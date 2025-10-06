@@ -464,3 +464,44 @@ label i {
     height: 100%;
   }
 }
+
+/* Footer */
+
+footer {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.social {
+  display: flex;
+  justify-content: end;
+}
+#links {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+#links a {
+  color: var(--primary-color);
+}
+#links a:hover {
+  color: var(--secionday-color);
+}
+.contact li {
+  list-style: none;
+  margin-top: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+  padding-left: 20px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
