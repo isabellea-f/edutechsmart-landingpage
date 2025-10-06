@@ -146,22 +146,6 @@ nav a {
   }
 }
 
-@media (min-width: 768px) {
-  .split-wrapper {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  #contact-section .split-wrapper {
-    flex-direction: row;
-    max-width: 80rem;
-  }
-
-  #contact-section .split-image img {
-    height: 100%;
-  }
-}
-
 .arrow-link i {
   margin-left: 0.5rem;
   transition: transform 0.2s;
@@ -179,7 +163,6 @@ nav a {
   text-align: center;
   max-width: 100%;
   margin: 2rem 1rem;
-  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .split-image img {
@@ -229,14 +212,14 @@ nav a {
   position: relative;
   color: var(--black-color);
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 10rem;
+  padding: 10px;
 }
 
 #slider-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
@@ -359,6 +342,19 @@ nav a {
   background-color: rgb(240, 238, 238);
 }
 
+@media (min-width: 768px) {
+  #contact-section {
+    color: var(--white-color);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4rem;
+  }
+
+  #contact-section a {
+    text-decoration: none;
+  }
+}
+
+/* Split wrapper */
 #contact-section .split-wrapper {
   display: flex;
   flex-direction: column;
@@ -407,13 +403,17 @@ nav a {
 }
 
 @media (min-width: 768px) {
-  #contact-section {
-    color: var(--white-color);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    padding: 4rem;
+  .split-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #contact-section .split-wrapper {
+    flex-direction: row;
+    max-width: 80rem;
   }
 
-  #contact-section a {
-    text-decoration: none;
+  #contact-section .split-image img {
+    height: 100%;
   }
 }
