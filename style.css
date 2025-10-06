@@ -47,7 +47,6 @@ button {
   border-radius: 40px;
   background-color: var(--secondary-color);
   color: var(--white-color);
-  z-index: 3;
   font-size: 1rem;
   font-weight: 400;
   cursor: pointer;
