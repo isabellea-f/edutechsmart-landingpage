@@ -28,43 +28,6 @@ body {
   --bg-lighter: rgb(49, 47, 47);
   --text: white;
 }
-/*Footer start*/
-footer {
-  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.social {
-  display: flex;
-  justify-content: end;
-}
-#links {
-  display: flex;
-  gap: 60px;
-  list-style: none;
-  font-size: 30px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-}
-#links a {
-  color: var(--primary-color);
-}
-#links a:hover {
-  color: var(--secionday-color);
-}
-.contact li {
-  list-style: none;
-  margin-top: 10px;
-}
-.contact {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  width: 400px;
-}
-
-.footerContainer {
-  display: flex;
-  justify-content: space-around;
-}
 
 /* Typography */
 h1 {
@@ -517,9 +480,8 @@ footer {
   list-style: none;
   font-size: 30px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-
 #links a {
   color: var(--primary-color);
 }
@@ -533,12 +495,11 @@ footer {
 .contact {
   display: flex;
   flex-direction: column;
-
-  width: 500px;
   padding-left: 20px;
+  width: 400px;
 }
 
 .footerContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
