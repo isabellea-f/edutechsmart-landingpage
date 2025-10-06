@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <title>EduTechSmart Global</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,24 +12,157 @@
     />
   </head>
   <body>
-    <nav></nav>
-    <header></header>
-    <main></main>
-    <footer>
-      <div class="contact">
-        <h3>Kontakta oss</h3>
-        <ul>
-          <li>Email: email@email.com</li>
-          <li>Telefon: +467543632</li>
-          <li>Hitta oss: Någonstans gatan 12</li>
-        </ul>
+    <nav>
+      <label for="dropdown" id="dropdown-label"
+        ><div id="dropdown-graphics">click ne</div></label
+      >
+      <input type="checkbox" id="dropdown" name="dropdown" />
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Our Tech</a>
+      <a href="#">Education</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </nav>
+    <header>
+      <div class="header-content">
+        <h1>Gamified Healthcare Education</h1>
+        <h2>Gamified education for any organisation</h2>
+        <p>
+          EduTechSmart provides Gamified Healthcare Education for companies in
+          personal assistance, home services, senior housing and LSS
+          accommodations.
+        </p>
+        <p>
+          For all organisations, EduTechSmart provides courses in CPR and Fire
+          Safety.
+        </p>
+        <button class="button">Bli kund</button>
       </div>
+    </header>
+    <main>
+      <section class="wrapper">
+        <div class="split-wrapper">
+          <div class="split-content">
+            <h2>Study Anytime, Anywhere And On Any Platform!</h2>
+            <p>
+              EduTechSmart provides healthcare companies with the necessary
+              education tools to ensure the highest possible efficiency and
+              quality.
+            </p>
+            <p>
+              Our strengths encompass affordability, flexibility in scheduling,
+              repeatability, 24/7 availability, multilingual support,
+              compatibility across devices, unique exercises beyond traditional
+              education, and a reduced environmental footprint.
+            </p>
+            <button class="button">Bli kund</button>
+          </div>
+          <div class="split-image">
+            <img src="assets/images/tablet.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="slider-section">
+        <div class="slider-container">
+          <div class="active">
+            <img
+              class="active"
+              src="assets/portraits/anders-eriksson.jpg"
+              alt=""
+            />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              This interactive educational method to teach CPR is really good,
+              relevant and necessary!
+            </h3>
+            <p class="name">Anders Eriksson</p>
+            <p class="profession">Cardiology Specialist, Senior Consultant</p>
+          </div>
+
+          <div>
+            <img src="assets/portraits/egil-strunke.jpeg" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              From a business point of view, this game-engine based education
+              combined with AI technology in a SaaS platform is brilliant.
+            </h3>
+            <p class="name">Egil Strunke</p>
+            <p class="profession">Strategic Advisor</p>
+          </div>
+
+          <div>
+            <img src="assets/portraits/sofia-nilsson.jpg" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              This is really spot on when it comes to timing for the healthcare
+              sector. A format we have been dreaming of.
+            </h3>
+            <p class="name">Sofia Nilsson</p>
+            <p class="profession">Expert Healthcare</p>
+          </div>
+
+          <div>
+            <img src="assets/portraits/ulrika-jonsson.jpg" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              We can train our staff in a way that is both effective and
+              motivating.
+            </h3>
+            <p class="name">Ulrika Jönsson, STIL Assistans</p>
+            <p class="profession">Supervisor Partner and Resource Manage</p>
+          </div>
+
+          <div>
+            <img src="assets/images/din-o-min-omsorg.jpg" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              The courses are really good, saves time and studies can be made
+              anywhere.
+            </h3>
+            <p class="name">Din & Min Omsorg</p>
+          </div>
+
+          <div>
+            <img src="assets/logos/logo_ufh.png" alt="" />
+            <h3 class="quote">
+              <i class="fa-solid fa-quote-left"></i>
+              It's essential that our employees has knowledge about CPR. This
+              can save the lives of guests and collegues.
+            </h3>
+            <p class="name">Umeå Folkets Hus</p>
+          </div>
+          <button class="prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="contact-section">
+        <div class="split-wrapper">
+          <div class="split-image">
+            <img src="assets/images/elderly-woman.jpg" alt="" />
+          </div>
+          <div class="split-content">
+            <p>Want to know more?</p>
+            <h2 class="split-title">Contact us!</h2>
+            <div>
+              <a class="arrow-link" href=""
+                >Let's talk! <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
       <div class="social">
         <ul id="links">
           <li>
-            <a href="#"
-              ><a href="#"><i class="fa-brands fa-linkedin"></i></a
-            ></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </li>
           <li>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -41,6 +175,35 @@
           </li>
         </ul>
       </div>
+      <div class="footerContainer">
+        <div class="contact contactUmea">
+          <h3>Office Umeå</h3>
+          <ul>
+            <li>EduTech Smart Global AB</li>
+            <li>Industrivägen 12</li>
+            <li>901 30 Umeå</li>
+            <li>Sweden</li>
+          </ul>
+        </div>
+        <div class="contact contactSkelleftea">
+          <h3>Office Skellefteå</h3>
+          <ul>
+            <li>EduTech Smart Global AB</li>
+            <li>Skellefteå Science City</li>
+            <li>Laboratorgränd 9</li>
+            <li>931 88 Skellefteå</li>
+            <li>Sweden</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Kontakta oss</h3>
+          <ul>
+            <li>Email: info@edutechsmart.com</li>
+            <li>Telefon: +46 73 40 00 345</li>
+          </ul>
+        </div>
+      </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
