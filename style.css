@@ -465,6 +465,154 @@ label i {
   }
 }
 
+/* mobile first */
+
+.card-container-flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    95deg,
+    #c2dcff,
+    #bedbec
+  ); /* slightly translucent */
+  box-shadow: 0 6px 18px rgba(17, 15, 15, 0.25);
+
+  text-align: center;
+
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 20px 30px;
+}
+.card {
+  flex: 1 1 calc(33.333% - 1rem);
+  line-height: 1.8;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  margin: 1.5rem;
+  text-align: justify;
+}
+
+.card3 li {
+  width: 300px;
+  text-align: left;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.card3 p {
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
+} /* mobile first */
+
+.card-container-flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color),
+    var(--accent-color)
+  ); /* slightly translucent */
+  box-shadow: 0 6px 18px rgba(17, 15, 15, 0.25);
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 20px 30px;
+}
+.card {
+  flex: 1 1 calc(33.333% - 1rem);
+  line-height: 1.8;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  margin: 1.5rem;
+  text-align: justify;
+}
+
+.card3 li {
+  width: 300px;
+  text-align: left;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.card3 p {
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+/* mobile first */
+
+.card-container-flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    95deg,
+    #c2dcff,
+    #bedbec
+  ); /* slightly translucent */
+  box-shadow: 0 6px 18px rgba(17, 15, 15, 0.25);
+
+  text-align: center;
+
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 20px 30px;
+}
+.card {
+  flex: 1 1 calc(33.333% - 1rem);
+  line-height: 1.8;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  margin: 1.5rem;
+  text-align: justify;
+}
+
+.card3 li {
+  /* width: 300px; */
+  text-align: left;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.card3 p {
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
 /* Footer */
 
 footer {
