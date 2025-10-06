@@ -9,6 +9,7 @@ body {
   color: var(--text);
   background-color: var(--bg);
   transition: background-color 0.7s ease, color 0.7s ease;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -36,10 +37,13 @@ h1 {
   font-weight: 300;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* Button */
 
-.button,
-button {
+.button {
   margin-top: 2rem;
   position: relative;
   padding: 0.6rem 1.5rem;
@@ -54,6 +58,10 @@ button {
 
 .button:hover {
   background-color: var(--accent-color);
+}
+
+.darkmode-btn {
+  margin-top: 0.8rem;
 }
 
 /* Hero / Header */
@@ -134,32 +142,37 @@ nav {
   top: 0;
   right: 0;
   z-index: 3;
-  background-color: transparent;
+  background-color: var(--white-color);
 }
 #logo {
   width: 200px;
   height: auto;
   padding: 0 5px;
-  margin: 0;
 }
-nav a {
+
+nav ul {
   display: none;
+}
+
+nav a {
+  /*  display: none; */
   padding: 10px;
   line-height: 2rem;
   text-decoration: none;
-  text-shadow: 0 0 10px black;
-  color: var(--white-color);
   background-color: transparent;
+  color: var(--black-color);
 }
+
 label i {
   margin-top: -10px;
 }
 #dropdown {
   display: none;
 }
-#dropdown:checked ~ a {
+#dropdown:checked ~ ul {
   display: block;
 }
+
 #dropdown-label {
   padding: 0;
   margin: 0;
@@ -167,23 +180,40 @@ label i {
   flex-direction: column;
   color: var(--primary-color);
 }
+
 @media screen and (width > 760px) {
   nav {
+    padding: 0 2rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    border-radius: 0px;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.267) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.178) 0px 8px 16px -8px;
   }
+
+  nav ul {
+    display: flex;
+  }
+
   nav a {
     justify-self: flex-end;
     display: inline-block;
   }
+
+  nav a:hover {
+    color: var(--primary-color);
+  }
+
   #logo {
     flex-grow: 1;
+    margin-left: 5rem;
   }
   #dropdown-label > i {
     display: none;
   }
-  #dropdown:checked ~ a {
-    display: inline-block;
+  #dropdown:checked ~ ul {
+    display: flex;
   }
 }
 
