@@ -578,7 +578,7 @@ footer {
   list-style: none;
   font-size: 30px;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 #links a {
   color: var(--primary-color);
