@@ -113,7 +113,6 @@ nav {
   background-color:var(--secondary-color);
   border-radius: 0 0 0 30px; 
   position: fixed;
-  right: calc(50vw - 104.33px / 2);
   text-align: center;
   font-size: 1.3rem;
   top: 0;
@@ -129,7 +128,7 @@ nav {
 nav a {
   display: none;
   padding: 10px;
-  line-height: 3rem;
+  line-height: 2rem;
   text-decoration: none;
   text-shadow: 0 0 10px black;
   color: var(--white-color);
@@ -151,15 +150,22 @@ label i{
   color:var(--primary-color)
 }
 @media screen and (width > 760px) {
-  #dropdown-graphics {
-    display: none;
-  }
   nav {
-    right: 0;
-    background-color: transparent;
+    display:flex;
+    justify-content:flex-end;
   }
   nav a {
+    justify-self: flex-end;
     display: inline-block;
+  }
+  #logo{
+    flex-grow:1;
+  }
+  #dropdown-label > i{
+    display:none;
+  }
+  #dropdown:checked ~ a {
+  display: inline-block;
   }
 }
 
