@@ -111,7 +111,9 @@ header h1 {
 /* Nav */
 
 nav {
-  position: absolute;
+  background-color:var(--secondary-color);
+  border-radius: 0 0 0 30px; 
+  position: fixed;
   right: calc(50vw - 104.33px / 2);
   text-align: center;
   font-size: 1.3rem;
@@ -134,12 +136,17 @@ nav a {
 #dropdown:checked ~ a {
   display: block;
 }
+#dropdown-graphics{
+  padding:5px;
+  cursor: pointer;
+}
 @media screen and (width > 760px) {
   #dropdown-graphics {
     display: none;
   }
   nav {
     right: 0;
+    background-color: transparent;
   }
   nav a {
     display: inline-block;
