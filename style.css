@@ -14,7 +14,7 @@ body {
 
 :root {
   --primary-color: #2a628f;
-  --secionday-color: #3e92cc;
+  --secondary-color: #3e92cc;
   --accent-color: #13293d;
 
   --white-color: #ffffff;
@@ -291,7 +291,6 @@ label i {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
   margin: 0 auto;
 }
 
@@ -653,8 +652,13 @@ footer {
   margin-bottom: 10px;
 }
 
-.footerContainer {
-  display: flex;
+@media (max-width: 600px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
 
-  justify-content: center;
+  .socials {
+    justify-content: flex-start;
+  }
 }
