@@ -29,3 +29,16 @@ let nextButton = document.querySelector(".next-btn");
 
 prevButton.addEventListener("click", prevSlide);
 nextButton.addEventListener("click", changeSlide);
+
+/* Darkmode button */
+const darkmodeBtn = document.querySelector(".darkmode-btn");
+
+darkmodeBtn.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark-mode");
+
+  if (document.documentElement.classList.contains("dark-mode")) {
+    darkmodeBtn.innerHTML = "Light Mode";
+  } else {
+    darkmodeBtn.innerHTML = "Dark Mode";
+  }
+});
