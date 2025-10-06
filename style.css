@@ -19,6 +19,7 @@ body {
 
   --white-color: #ffffff;
   --black-color: #000000;
+  --light-gray-color: rgb(228, 226, 226);
 
   --bg: var(--white-color);
   --text: var(--black-color);
@@ -419,8 +420,7 @@ label i {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 6rem 4rem;
   margin-bottom: 4rem;
-  background-color: var(--bg-lighter);
-  background-color: rgb(228, 226, 226);
+  background-color: var(--light-gray-color);
 }
 
 @media (min-width: 768px) {
@@ -521,6 +521,7 @@ label i {
   flex: 1 1 calc(33.333% - 1rem);
   line-height: 1.8;
   background-color: var(--white-color);
+  background-color: var(--bg);
   border-radius: 10px;
 }
 
@@ -537,7 +538,7 @@ label i {
 }
 
 .card3 li {
-  width: 300px;
+  width: 250px;
   text-align: left;
   list-style: none;
   margin-left: 50px;
