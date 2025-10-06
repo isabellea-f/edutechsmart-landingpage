@@ -386,8 +386,8 @@ label i {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 6rem 4rem;
   margin-bottom: 4rem;
-  background-color: rgb(240, 238, 238);
   background-color: var(--bg-lighter);
+  background-color: rgb(240, 238, 238);
 }
 
 @media (min-width: 768px) {
