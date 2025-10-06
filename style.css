@@ -13,8 +13,8 @@ footer {
   display: flex;
   justify-content: space-between;
   background: var(--primary-color);
-  padding: 20px;
-  border-top: var(--accent-color);
+  padding: 10px;
+  border-top: 2px solid var(--accent-color);
 }
 .social {
   display: flex;
@@ -27,7 +27,7 @@ footer {
   font-size: 30px;
 }
 #links a {
-  color: black;
+  color: var(--white-color);
 }
 #links a:hover {
   color: var(--secionday-color);
@@ -39,6 +39,7 @@ footer {
   background: var(--secionday-color);
   border-radius: 10px;
   padding: 20px;
+  width: 500px;
 }
 .contact ul {
   padding: 20px;
