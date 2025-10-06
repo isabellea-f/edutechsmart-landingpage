@@ -419,7 +419,7 @@ label i {
   color: var(--white-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 6rem 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   background-color: var(--light-gray-color);
 }
 
@@ -621,6 +621,7 @@ label i {
 .footerContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 footer {
