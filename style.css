@@ -109,20 +109,41 @@ header h1 {
 }
 
 /* Nav */
+
 nav {
   position: absolute;
-  text-align: right;
+  right: calc(50vw - 104.33px / 2);
+  text-align: center;
   font-size: 1.3rem;
   top: 0;
   right: 0;
   z-index: 3;
 }
 nav a {
+  display: none;
   padding: 10px;
   line-height: 3rem;
   text-decoration: none;
   text-shadow: 0 0 10px black;
   color: var(--white-color);
+}
+
+#dropdown {
+  display: none;
+}
+#dropdown:checked ~ a {
+  display: block;
+}
+@media screen and (width > 760px) {
+  #dropdown-graphics {
+    display: none;
+  }
+  nav {
+    right: 0;
+  }
+  nav a {
+    display: inline-block;
+  }
 }
 
 /* Contanct us / split wrapper */
