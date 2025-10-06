@@ -11,15 +11,34 @@
   --black-color: #000000;
 }
 nav{
-  position:absolute;
-  right:0;
-  text-align: right;
+  position: absolute;
+  right:calc(50vw - 104.33px/2);
+  text-align: center;
   font-size: 1.3rem;
 }
 nav a{
+  display: none;
   padding: 10px;
   line-height: 3rem;
   text-decoration: none;
   text-shadow: 0 0 10px black;
   color:var(--white-color);
+}
+#dropdown{
+    display:none;
+}
+#dropdown:checked ~ a{
+  display:block;
+}
+@media screen and (width > 760px) {
+  #dropdown-graphics{
+    display:none;
+  }
+  nav{
+    right: 0;
+  }
+  nav a{
+    display:inline-block;
+  }
+  
 }
