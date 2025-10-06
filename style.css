@@ -5,8 +5,7 @@
   padding: 0;
 }
 
-body,
-body * {
+body {
   color: var(--text);
   background-color: var(--bg);
   transition: background-color 0.7s ease, color 0.7s ease;
@@ -26,7 +25,7 @@ body * {
 
 .dark-mode {
   --bg: rgb(40, 38, 38);
-  --bg-lighter: rgb(97, 87, 87);
+  --bg-lighter: rgb(49, 47, 47);
   --text: white;
 }
 
@@ -68,7 +67,6 @@ header {
   justify-content: center;
   text-align: center;
   padding: 4rem 1.5rem;
-  color: var(--white-color);
   overflow: hidden;
 }
 
@@ -100,7 +98,6 @@ header h1 {
     height: 80vh;
     justify-content: flex-end;
     text-align: left;
-    color: var(--black-color);
   }
 
   header::before {
@@ -130,8 +127,8 @@ header h1 {
 /* Nav */
 
 nav {
-  background-color:var(--secondary-color);
-  border-radius: 0 0 0 30px; 
+  background-color: var(--secondary-color);
+  border-radius: 0 0 0 30px;
   position: fixed;
   text-align: center;
   font-size: 1.3rem;
@@ -140,11 +137,11 @@ nav {
   z-index: 3;
   background-color: transparent;
 }
-#logo{
+#logo {
   width: 200px;
   height: auto;
-  padding:0 5px;
-  margin:0;
+  padding: 0 5px;
+  margin: 0;
 }
 nav a {
   display: none;
@@ -155,7 +152,7 @@ nav a {
   color: var(--white-color);
   background-color: transparent;
 }
-label i{
+label i {
   margin-top: -10px;
 }
 #dropdown {
@@ -164,30 +161,30 @@ label i{
 #dropdown:checked ~ a {
   display: block;
 }
-#dropdown-label{
-  padding:0;
-  margin:0;
-  display:inline-flex;
+#dropdown-label {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
   flex-direction: column;
-  color:var(--primary-color)
+  color: var(--primary-color);
 }
 @media screen and (width > 760px) {
   nav {
-    display:flex;
-    justify-content:flex-end;
+    display: flex;
+    justify-content: flex-end;
   }
   nav a {
     justify-self: flex-end;
     display: inline-block;
   }
-  #logo{
-    flex-grow:1;
+  #logo {
+    flex-grow: 1;
   }
-  #dropdown-label > i{
-    display:none;
+  #dropdown-label > i {
+    display: none;
   }
   #dropdown:checked ~ a {
-  display: inline-block;
+    display: inline-block;
   }
 }
 
@@ -260,7 +257,6 @@ label i{
 
 .slider-container {
   position: relative;
-  color: var(--black-color);
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10rem;
 }
@@ -296,6 +292,7 @@ label i{
 
 .slider-container .quote i {
   font-size: 1.5rem;
+  color: var(--black-color);
 }
 
 .slider-container > div {
