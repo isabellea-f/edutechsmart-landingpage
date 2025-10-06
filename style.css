@@ -54,6 +54,10 @@ button {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: var(--accent-color);
+}
+
 /* Hero / Header */
 header {
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -108,10 +112,6 @@ header h1 {
     padding: 6rem 2rem;
     margin-left: 5rem;
     max-width: 30rem;
-  }
-
-  header .button:hover {
-    background-color: var(--accent-color);
   }
 
   header h2 {
@@ -202,6 +202,10 @@ nav a {
 
 .split-wrapper p {
   margin-bottom: 2rem;
+}
+
+.split-wrapper a {
+  text-decoration: none;
 }
 
 /* Split wrapper */
