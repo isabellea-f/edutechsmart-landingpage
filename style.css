@@ -5,12 +5,29 @@
   padding: 0;
 }
 
+body,
+body * {
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
 :root {
   --primary-color: #2a628f;
   --secondary-color: #3e92cc;
   --accent-color: #13293d;
+
   --white-color: #ffffff;
   --black-color: #000000;
+
+  --bg: var(--white-color);
+  --text: var(--black-color);
+}
+
+.dark-mode {
+  --bg: rgb(40, 38, 38);
+  --bg-lighter: rgb(97, 87, 87);
+  --text: white;
 }
 
 /* Typography */
@@ -18,6 +35,23 @@ h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: 300;
+}
+
+/* Button */
+
+.button,
+button {
+  margin-top: 2rem;
+  position: relative;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  z-index: 3;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 /* Hero / Header */
@@ -50,20 +84,6 @@ header .header-content {
   z-index: 1;
   max-width: 30rem;
   margin: 0 auto;
-}
-
-header .button,
-.split-wrapper button {
-  margin-top: 2rem;
-  position: relative;
-  padding: 0.6rem 1.5rem;
-  border: none;
-  border-radius: 40px;
-  background-color: var(--secondary-color);
-  color: var(--white-color);
-  z-index: 3;
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 header h1 {
@@ -118,6 +138,7 @@ nav {
   top: 0;
   right: 0;
   z-index: 3;
+  background-color: transparent;
 }
 #logo{
   width: 200px;
@@ -132,6 +153,7 @@ nav a {
   text-decoration: none;
   text-shadow: 0 0 10px black;
   color: var(--white-color);
+  background-color: transparent;
 }
 label i{
   margin-top: -10px;
@@ -314,6 +336,7 @@ label i{
   top: 80%;
   font-size: 2rem;
   background: var(--white-color);
+  background-color: var(--bg);
   color: var(--primary-color);
   border: none;
   cursor: pointer;
@@ -364,6 +387,7 @@ label i{
   padding: 6rem 4rem;
   margin-bottom: 4rem;
   background-color: rgb(240, 238, 238);
+  background-color: var(--bg-lighter);
 }
 
 @media (min-width: 768px) {
