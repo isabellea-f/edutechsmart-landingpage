@@ -595,9 +595,11 @@ footer {
   flex-direction: column;
   padding-left: 20px;
   width: 400px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .footerContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
