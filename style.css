@@ -2,3 +2,40 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-color: #2a628f;
+  --secionday-color: #3e92cc;
+  --accent-color: #13293d;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color);
+  padding: 20px;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+#links a:hover {
+  color: var(--secionday-color);
+}
+.contact li {
+  margin-top: 10px;
+}
+.contact {
+  background: var(--secionday-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+.contact ul {
+  padding: 20px;
+}
