@@ -75,7 +75,6 @@ header h1 {
   header {
     height: 80vh;
     justify-content: flex-end;
-    margin-top: -7rem;
     text-align: left;
     color: var(--black-color);
   }
@@ -163,6 +162,7 @@ nav a {
   text-align: center;
   max-width: 100%;
   margin: 2rem 1rem;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .split-image img {
@@ -212,14 +212,14 @@ nav a {
   position: relative;
   color: var(--black-color);
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 10px;
+  padding: 10rem;
 }
 
 #slider-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 90vh;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
@@ -354,7 +354,6 @@ nav a {
   }
 }
 
-/* Split wrapper */
 #contact-section .split-wrapper {
   display: flex;
   flex-direction: column;
