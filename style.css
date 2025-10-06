@@ -121,6 +121,12 @@ nav {
   right: 0;
   z-index: 3;
 }
+#logo{
+  width: 200px;
+  height: auto;
+  padding:0 5px;
+  margin:0;
+}
 nav a {
   display: none;
   padding: 10px;
@@ -129,16 +135,21 @@ nav a {
   text-shadow: 0 0 10px black;
   color: var(--white-color);
 }
-
+label i{
+  margin-top: -10px;
+}
 #dropdown {
   display: none;
 }
 #dropdown:checked ~ a {
   display: block;
 }
-#dropdown-graphics{
-  padding:5px;
-  cursor: pointer;
+#dropdown-label{
+  padding:0;
+  margin:0;
+  display:inline-flex;
+  flex-direction: column;
+  color:var(--primary-color)
 }
 @media screen and (width > 760px) {
   #dropdown-graphics {
