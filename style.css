@@ -26,8 +26,8 @@ body {
 }
 
 .dark-mode {
-  --bg: rgb(40, 38, 38);
-  --bg-lighter: rgb(49, 47, 47);
+  --bg-dark: rgb(40, 38, 38);
+  --bg: rgb(61, 59, 59);
   --text: white;
 }
 
@@ -156,6 +156,10 @@ nav {
   padding: 0 5px;
 }
 
+.dark-mode #logo {
+  filter: brightness(0) invert(1);
+}
+
 nav ul {
   display: none;
 }
@@ -187,6 +191,14 @@ label i {
   color: var(--primary-color);
 }
 
+.dark-mode nav {
+  background-color: var(--bg-dark);
+}
+
+.dark-mode nav a {
+  color: var(--white-color);
+}
+
 @media screen and (width > 760px) {
   nav {
     padding: 0 2rem;
@@ -215,6 +227,7 @@ label i {
     flex-grow: 1;
     margin-left: 5rem;
   }
+
   #dropdown-label > i {
     display: none;
   }
@@ -241,6 +254,10 @@ label i {
   max-width: 100%;
   margin: 2rem 1rem;
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark-mode .split-wrapper {
+  background-color: var(--bg-dark);
 }
 
 .split-image img {
@@ -274,6 +291,8 @@ label i {
     max-width: 80rem;
     margin: 0 auto;
     font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem;
+    margin-top: 4rem;
   }
 
   .split-wrapper h2 {
@@ -292,14 +311,19 @@ label i {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 .slider-container {
   position: relative;
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 10rem;
-  background-color: rgb(228, 226, 226);
+  padding: 2rem;
+  background-color: var(--light-gray-color);
+  height: 65vh;
+}
+
+.dark-mode .slider-container {
+  background-color: var(--bg-dark);
 }
 
 .slider-container img {
@@ -364,7 +388,7 @@ label i {
 
 .prev-btn,
 .next-btn {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   position: absolute;
   top: 80%;
   font-size: 2rem;
@@ -373,15 +397,15 @@ label i {
   color: var(--primary-color);
   border: none;
   cursor: pointer;
-  background-color: rgb(228, 226, 226);
+  background-color: var(--bg-dark);
 }
 
 .prev-btn {
-  left: 120px;
+  left: 40px;
 }
 
 .next-btn {
-  right: 120px;
+  right: 40px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -421,6 +445,10 @@ label i {
   padding: 6rem 4rem;
   margin-bottom: 1rem;
   background-color: var(--light-gray-color);
+}
+
+.dark-mode #contact-section {
+  background-color: var(--bg-dark);
 }
 
 @media (min-width: 768px) {
@@ -504,14 +532,20 @@ label i {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  background: linear-gradient(
-    180deg,
-    var(--primary-color),
-    var(--primary-color)
-  ); /* slightly translucent */
+  background-color: var(--primary-color);
   box-shadow: 0 6px 18px rgba(17, 15, 15, 0.25);
   text-align: center;
   border: 2px solid gray;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 20px 30px;
+}
+
+.dark-mode .card-container-flex {
+  background-color: var(--bg-dark);
+  box-shadow: 0 6px 18px rgba(17, 15, 15, 0.25);
+  text-align: center;
+  border: 2px solid var(--accent-color);
   border-radius: 5px;
   margin: 3px;
   padding: 20px 30px;
@@ -534,7 +568,7 @@ label i {
 
 .card p {
   margin: 1.5rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .card3 li {
@@ -559,6 +593,7 @@ label i {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   margin-top: 7rem;
   margin-bottom: 9rem;
 }
@@ -580,40 +615,23 @@ label i {
 }
 
 .youtube-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
   width: 100%;
-  max-width: 560px;
   cursor: pointer;
-  border-radius: 20px;
   overflow: hidden;
-  box-shadow: var(--accent-color);
-}
-
-.youtube-wrapper .youtube-thumb {
-  width: 100%;
-  display: block;
-  transition: transform 0.4s;
-}
-
-.youtube-wrapper:hover .youtube-thumb {
-  transform: scale(1.4);
-}
-
-.youtube-wrapper .play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70px;
-  height: 70px;
-  background: url(assets/logos/red-play-button.svg) no-repeat center center;
-  background-size: contain;
-  pointer-events: none;
 }
 
 @media (max-width: 600px) {
   .youtube-section {
     flex-direction: column;
+  }
+  iframe {
+    height: 20vh;
+    width: 80vw;
   }
 }
 
@@ -653,7 +671,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  width: 400px;
+  width: 20rem;
   height: auto;
   margin-bottom: 10px;
 }
