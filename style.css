@@ -61,7 +61,7 @@ li {
 }
 
 .darkmode-btn {
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 /* Hero / Header */
@@ -91,13 +91,17 @@ header::before {
 header .header-content {
   position: relative;
   z-index: 1;
-  max-width: 30rem;
   margin: 0 auto;
 }
 
 header h1 {
   color: var(--secondary-color);
-  font-weight: 500;
+  font-size: 3rem;
+}
+
+header p {
+  color: var(--white-color);
+  display: none;
 }
 
 @media only screen and (min-width: 601px) {
@@ -113,21 +117,22 @@ header h1 {
   }
 
   header .header-content {
-    padding: 6rem 2rem;
+    padding: 10rem 2rem;
     margin-left: 5rem;
-    max-width: 30rem;
+    max-width: 38rem;
   }
 
   header h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    font-weight: 600;
     color: var(--secondary-color);
+    font-weight: 400;
   }
 
-  header h3 {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
+  header p {
+    display: block;
+    color: var(--black-color);
+    color: var(--text);
   }
 }
 
@@ -268,8 +273,6 @@ label i {
     max-width: 80rem;
     margin: 0 auto;
     font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
   }
 
   .split-wrapper h2 {
@@ -284,19 +287,19 @@ label i {
 
 /* Slider */
 
-.slider-container {
-  position: relative;
-  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 10rem;
-}
-
 #slider-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 70vh;
   margin: 0 auto;
-  margin-bottom: 4rem;
+}
+
+.slider-container {
+  position: relative;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10rem;
+  background-color: rgb(228, 226, 226);
 }
 
 .slider-container img {
@@ -370,6 +373,7 @@ label i {
   color: var(--primary-color);
   border: none;
   cursor: pointer;
+  background-color: rgb(228, 226, 226);
 }
 
 .prev-btn {
@@ -401,11 +405,11 @@ label i {
   }
 
   .prev-btn {
-    left: 0;
+    left: 25px;
   }
 
   .next-btn {
-    right: 0;
+    right: 25px;
   }
 }
 
@@ -417,7 +421,7 @@ label i {
   padding: 6rem 4rem;
   margin-bottom: 4rem;
   background-color: var(--bg-lighter);
-  background-color: rgb(240, 238, 238);
+  background-color: rgb(228, 226, 226);
 }
 
 @media (min-width: 768px) {
@@ -504,24 +508,28 @@ label i {
   background: linear-gradient(
     180deg,
     var(--primary-color),
-    var(--accent-color)
+    var(--primary-color)
   ); /* slightly translucent */
   box-shadow: 0 6px 18px rgba(17, 15, 15, 0.25);
-
   text-align: center;
-
   border: 2px solid gray;
   border-radius: 5px;
   margin: 3px;
   padding: 20px 30px;
 }
+
 .card {
   flex: 1 1 calc(33.333% - 1rem);
   line-height: 1.8;
+  background-color: var(--white-color);
+  border-radius: 10px;
 }
 
 .card h2 {
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: 300;
 }
 
 .card p {
@@ -547,6 +555,14 @@ label i {
 }
 
 /* youtube klipp */
+.youtube-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 7rem;
+  margin-bottom: 9rem;
+}
+
 .video-container {
   display: flex;
   gap: 20px;
@@ -557,10 +573,12 @@ label i {
 }
 
 .youtube-heading {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 20px 0 20px 5px;
   color: var(--primary-color);
+  text-align: center;
 }
+
 .youtube-wrapper {
   position: relative;
   width: 100%;
@@ -591,6 +609,12 @@ label i {
   background: url(assets/logos/red-play-button.svg) no-repeat center center;
   background-size: contain;
   pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .youtube-section {
+    flex-direction: column;
+  }
 }
 
 /* Footer */
