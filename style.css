@@ -5,8 +5,7 @@
   padding: 0;
 }
 
-body,
-body * {
+body {
   color: var(--text);
   background-color: var(--bg);
   transition: background-color 0.7s ease, color 0.7s ease;
@@ -26,7 +25,7 @@ body * {
 
 .dark-mode {
   --bg: rgb(40, 38, 38);
-  --bg-lighter: rgb(97, 87, 87);
+  --bg-lighter: rgb(49, 47, 47);
   --text: white;
 }
 footer {
@@ -87,10 +86,13 @@ button {
   border-radius: 40px;
   background-color: var(--secondary-color);
   color: var(--white-color);
-  z-index: 3;
   font-size: 1rem;
   font-weight: 400;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
 }
 
 /* Hero / Header */
@@ -103,7 +105,6 @@ header {
   justify-content: center;
   text-align: center;
   padding: 4rem 1.5rem;
-  color: var(--white-color);
   overflow: hidden;
 }
 
@@ -135,7 +136,6 @@ header h1 {
     height: 80vh;
     justify-content: flex-end;
     text-align: left;
-    color: var(--black-color);
   }
 
   header::before {
@@ -147,10 +147,6 @@ header h1 {
     padding: 6rem 2rem;
     margin-left: 5rem;
     max-width: 30rem;
-  }
-
-  header .button:hover {
-    background-color: var(--accent-color);
   }
 
   header h2 {
@@ -169,8 +165,9 @@ header h1 {
 /* Nav */
 
 nav {
-  position: absolute;
-  right: calc(50vw - 104.33px / 2);
+  background-color: var(--secondary-color);
+  border-radius: 0 0 0 30px;
+  position: fixed;
   text-align: center;
   font-size: 1.3rem;
   top: 0;
@@ -178,30 +175,53 @@ nav {
   z-index: 3;
   background-color: transparent;
 }
+#logo {
+  width: 200px;
+  height: auto;
+  padding: 0 5px;
+  margin: 0;
+}
 nav a {
   display: none;
   padding: 10px;
-  line-height: 3rem;
+  line-height: 2rem;
   text-decoration: none;
   text-shadow: 0 0 10px black;
   color: var(--white-color);
   background-color: transparent;
 }
-
+label i {
+  margin-top: -10px;
+}
 #dropdown {
   display: none;
 }
 #dropdown:checked ~ a {
   display: block;
 }
+#dropdown-label {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  color: var(--primary-color);
+}
 @media screen and (width > 760px) {
-  #dropdown-graphics {
-    display: none;
-  }
   nav {
-    right: 0;
+    display: flex;
+    justify-content: flex-end;
   }
   nav a {
+    justify-self: flex-end;
+    display: inline-block;
+  }
+  #logo {
+    flex-grow: 1;
+  }
+  #dropdown-label > i {
+    display: none;
+  }
+  #dropdown:checked ~ a {
     display: inline-block;
   }
 }
@@ -243,6 +263,10 @@ nav a {
   margin-bottom: 2rem;
 }
 
+.split-wrapper a {
+  text-decoration: none;
+}
+
 /* Split wrapper */
 
 @media only screen and (min-width: 601px) {
@@ -271,7 +295,6 @@ nav a {
 
 .slider-container {
   position: relative;
-  color: var(--black-color);
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10rem;
 }
@@ -307,6 +330,7 @@ nav a {
 
 .slider-container .quote i {
   font-size: 1.5rem;
+  color: var(--black-color);
 }
 
 .slider-container > div {
@@ -401,8 +425,8 @@ nav a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 6rem 4rem;
   margin-bottom: 4rem;
-  background-color: rgb(240, 238, 238);
   background-color: var(--bg-lighter);
+  background-color: rgb(240, 238, 238);
 }
 
 @media (min-width: 768px) {
@@ -478,4 +502,45 @@ nav a {
   #contact-section .split-image img {
     height: 100%;
   }
+}
+
+/* Footer */
+
+footer {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.social {
+  display: flex;
+  justify-content: end;
+}
+#links {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+#links a {
+  color: var(--primary-color);
+}
+#links a:hover {
+  color: var(--secionday-color);
+}
+.contact li {
+  list-style: none;
+  margin-top: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+  padding-left: 20px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
 }
