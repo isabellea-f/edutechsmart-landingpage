@@ -28,6 +28,7 @@ body {
   --bg-lighter: rgb(49, 47, 47);
   --text: white;
 }
+/*Footer start*/
 footer {
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -41,9 +42,8 @@ footer {
   list-style: none;
   font-size: 30px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-
 #links a {
   color: var(--primary-color);
 }
@@ -57,15 +57,13 @@ footer {
 .contact {
   display: flex;
   flex-direction: column;
-
-  width: 500px;
   padding-left: 20px;
+  width: 400px;
 }
-.contact ul {
-}
+
 .footerContainer {
   display: flex;
-  justify-content: space-betweengt;
+  justify-content: space-around;
 }
 
 /* Typography */
