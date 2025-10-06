@@ -130,8 +130,9 @@ header h1 {
 /* Nav */
 
 nav {
-  position: absolute;
-  right: calc(50vw - 104.33px / 2);
+  background-color:var(--secondary-color);
+  border-radius: 0 0 0 30px; 
+  position: fixed;
   text-align: center;
   font-size: 1.3rem;
   top: 0;
@@ -139,31 +140,54 @@ nav {
   z-index: 3;
   background-color: transparent;
 }
+#logo{
+  width: 200px;
+  height: auto;
+  padding:0 5px;
+  margin:0;
+}
 nav a {
   display: none;
   padding: 10px;
-  line-height: 3rem;
+  line-height: 2rem;
   text-decoration: none;
   text-shadow: 0 0 10px black;
   color: var(--white-color);
   background-color: transparent;
 }
-
+label i{
+  margin-top: -10px;
+}
 #dropdown {
   display: none;
 }
 #dropdown:checked ~ a {
   display: block;
 }
+#dropdown-label{
+  padding:0;
+  margin:0;
+  display:inline-flex;
+  flex-direction: column;
+  color:var(--primary-color)
+}
 @media screen and (width > 760px) {
-  #dropdown-graphics {
-    display: none;
-  }
   nav {
-    right: 0;
+    display:flex;
+    justify-content:flex-end;
   }
   nav a {
+    justify-self: flex-end;
     display: inline-block;
+  }
+  #logo{
+    flex-grow:1;
+  }
+  #dropdown-label > i{
+    display:none;
+  }
+  #dropdown:checked ~ a {
+  display: inline-block;
   }
 }
 
