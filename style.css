@@ -14,7 +14,7 @@ body {
 
 :root {
   --primary-color: #2a628f;
-  --secondary-color: #3e92cc;
+  --secionday-color: #3e92cc;
   --accent-color: #13293d;
 
   --white-color: #ffffff;
@@ -632,9 +632,8 @@ footer {
   list-style: none;
   font-size: 30px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
-
 #links a {
   color: var(--primary-color);
 }
@@ -648,12 +647,14 @@ footer {
 .contact {
   display: flex;
   flex-direction: column;
-
-  width: 500px;
   padding-left: 20px;
+  width: 400px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .footerContainer {
   display: flex;
-  justify-content: space-between;
+
+  justify-content: center;
 }
