@@ -42,3 +42,9 @@ darkmodeBtn.addEventListener("click", () => {
     darkmodeBtn.innerHTML = "Dark Mode";
   }
 });
+
+// Alerts when an element with classname btnAlert is clicked
+let links = document.querySelectorAll(".btnAlert");
+links.forEach(tag => {
+  tag.addEventListener("click", () => alert("To be Built"));
+});
